@@ -36,14 +36,4 @@ function authenticateToken(req, res, next) {
     });
 }
 
-function checkToken() {
-    const user = "MyAss";
-    const salt = "x3h4y8hg4656dqs45d4qs641";
-    const token = jwt.sign(user, salt);
-    jwt.verify(token, salt, (err, decUser) => {
-        if (err) return console.log(err);
-        console.log(decUser);
-    });
-}
-
 app.listen(3000, () => console.log("http://localhost:3000/"));
