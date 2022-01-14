@@ -1,29 +1,30 @@
 {
-  "name": "jwt_authentication",
-  "version": "1.0.0",
-  "description": "JSON Web Token Authentication",
-  "main": "server.js",
-  "scripts": {
-    "devStart": "nodemon jerver.js",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexbalak21/JWT_Authentication.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alexbalak21/JWT_Authentication/issues"
-  },
-  "homepage": "https://github.com/alexbalak21/JWT_Authentication#readme",
-  "dependencies": {
-    "dotenv": "^11.0.0",
-    "express": "^4.17.2",
-    "jsonwebtoken": "^8.5.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "name": "jwt_authentication",
+    "version": "1.0.0",
+    "description": "JSON Web Token Authentication",
+    "main": "server.js",
+    "scripts": {
+        "devStart": "nodemon server.js",
+        "devStartAuth": "nodemon authserver.js",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexbalak21/JWT_Authentication.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/alexbalak21/JWT_Authentication/issues"
+    },
+    "homepage": "https://github.com/alexbalak21/JWT_Authentication#readme",
+    "dependencies": {
+        "dotenv": "^11.0.0",
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
 }
